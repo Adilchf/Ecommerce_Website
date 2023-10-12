@@ -27,21 +27,25 @@
 </head>
 
 <body class="g-sidenav-show  bg-gray-200" >
-@include('layouts.inc.sidebar')
-<main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-@include('layouts.inc.adminnav')
+    <div class="wrapper">
+    @include('layouts.inc.sidebar')
+    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    @include('layouts.inc.adminnav')
 
-<div class="container-fluid py-4">
-
-
-
-
-</div>
-@include('layouts.inc.adminfooter')
+    <div class="content">
+    @yield('content')
 
 
 
-</main>
+    </div>
+    @include('layouts.inc.adminfooter')
+
+
+
+    </main>
+
+    </div>
+
 
 
 

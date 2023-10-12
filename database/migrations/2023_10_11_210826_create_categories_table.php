@@ -15,9 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug');
-            $table->longText('description')->default('0');
-            $table->tinyInteger('status')->default('0');
+            $table->longText('description');
+            $table->tinyInteger('status');
             $table->tinyInteger('popular');
+            $table->string('image');
             $table->string('meta_title');
             $table->string('meta_descr');
             $table->string('meta_keywords');
