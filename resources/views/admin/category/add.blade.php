@@ -24,11 +24,11 @@
             </div>
             <div class="col-md-6 mb-3">
                 <label for="">Status</label>
-                <input type="text" class="form-control" name="status">
+                <input type="checkbox"  name="status">
             </div>
             <div class="col-md-6 mb-3">
                 <label for="">Popular</label>
-                <input type="text" class="form-control" name="popular">
+                <input type="checkbox"  name="popular">
             </div>
             <div class="col-md-12 mb-3">
                 <label for="">Meta Title</label>
@@ -43,7 +43,7 @@
                 <textarea name="meta_descr" rows="3" class="form-control"></textarea>
             </div>
             <div class="col-md-12 mb-3">
-                <input type="fille" name="image" class="form-control">
+                <input type="file" name="image" class="form-control">
             </div>
             <div class="col-md-12 mb-3">
                 <button type="submit" class="btn btn-primary">Submit</button>
