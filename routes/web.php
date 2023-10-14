@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\FrontendController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ProductsController;
+use App\Http\Controllers\Frontend\FrontController;
+
 
 
 
@@ -17,9 +20,7 @@ use App\Http\Controllers\Admin\CategoryController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\Frontend\FrontController::class, 'index']);
 
 Auth::routes();
 
@@ -32,5 +33,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::get('/categories', 'App\Http\Controllers\Admin\CategoryController@index');
     Route::get('/add-category', 'App\Http\Controllers\Admin\CategoryController@add');
     Route::post('/insert-category','App\Http\Controllers\Admin\CategoryController@insert');
+    Route::get('/products', 'App\Http\Controllers\Admin\ProductsController@index');
+    Route::get('/add-product', 'App\Http\Controllers\Admin\ProductsController@add');
+    Route::post('/insert-product','App\Http\Controllers\Admin\ProductsController@insert');
+
 
  });
