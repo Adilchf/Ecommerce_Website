@@ -23,7 +23,7 @@
                     <td>{{ $item->name }}</td>
                     <td>{{ $item->description }}</td>
                     <td>
-                        <img src="{{ asset('assets/uploads/category/'.$item->image)}}" alt="Image here">
+                        <img src="{{ asset('/assets/uploads/category/'.$item->image)}}" alt="Image here">
                     </td>
                     <td>
                         <button class="btn btn-primary">Edit</button>
