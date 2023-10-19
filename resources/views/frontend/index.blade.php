@@ -13,10 +13,12 @@
             @foreach($featured_products as $prod)
             <div class="col-md-3">
                 <div class="card">
+
                     <img src="{{asset('assets/uploads/products/'.$prod->image)}}" alt="">
                     <div class="card-body">
                         <h5>{{$prod->name}}</h5>
-                        <small>{{$prod->selling_price}}</small>
+                        <span class="float-star">{{$prod->selling_price}}</span>
+                        <span class="float-end"><s>{{$prod->original_price}}</s></span>
                     </div>
                 </div>
             </div>

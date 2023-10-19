@@ -21,6 +21,7 @@ use App\Http\Controllers\Frontend\FrontController;
 */
 
 Route::get('/', [App\Http\Controllers\Frontend\FrontController::class, 'index']);
+Route::get('/category', [App\Http\Controllers\Frontend\FrontController::class, 'category']);
 
 Auth::routes();
 
